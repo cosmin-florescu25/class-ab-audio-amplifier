@@ -27,4 +27,14 @@ Semnalul vine direct din mufa jack a laptopului. Pentru ca semnalul nativ e ster
 
 ## Ce am invatat / Probleme practice rezolvate
 
-- **Firele de la casti:** Dupa ce am taiat cablul jack, nu aveam deloc semnal pentru ca firele aveau un strat protector de smalt;
+- **Firele de la casti:** Dupa ce am taiat cablul jack, nu aveam deloc semnal pentru ca firele aveau un strat protector de smalt; a trebuit sa le ard smaltul cu bricheta/cositor ca sa faca contact.
+- **Brum si zgomot de fundal:** Am redus bazaitul parazit adaugand condensatoare suplimentare de filtrare/decuplare (2x 104nF in paralel) direct spre masa.
+- **Punct static echilibrat:** In simularea DC (.op), tensiunea dintre emitoarele etajului final a iesit la ~2.34V, aproape de jumatatea alimentarii (Vcc/2), ceea ce permite semnalului sa oscileze simetric.
+
+---
+
+## Fisiere in repo
+
+- `AmplificatorAudio.asc` – Schema completa pentru rulat direct in LTspice.
+- `Proiect.pdf` – Raportul original cu calcule, liste de preturi si grafice.
+- `assets/` – Poze cu montajul pe breadboard si capturi dupa osciloscop/simulari.
